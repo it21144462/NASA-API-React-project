@@ -20,7 +20,7 @@ function Signup() {
     },[]);
 
     const fetchUsers=()=>{
-      axios.get('http://localhost:3001/register')
+      axios.get('https://nasa-api-react-project-production.up.railway.app/register')
       .then((res)=>{
         // console.log(res.data);
         console.log('fetch clear');
@@ -30,7 +30,7 @@ function Signup() {
     const handleRegister=(event)=>{
       event.preventDefault();
       const user = {name,email,password,role};
-      axios.post('http://localhost:3001/register',user)
+      axios.post('https://nasa-api-react-project-production.up.railway.app/register',user)
       .then(()=>{
         alert('Registration Successfull.');
         setName('');
