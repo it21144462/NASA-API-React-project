@@ -16,7 +16,7 @@ function Login() {
   },[]);
 
   const fetchUsers=()=>{
-    axios.get('http://localhost:3001/register')
+    axios.get('https://nasa-api-react-project-production.up.railway.app/register')
     .then((res)=>{
       console.log(res.data);
     })
