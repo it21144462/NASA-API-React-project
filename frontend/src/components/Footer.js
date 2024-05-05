@@ -4,8 +4,8 @@ import { faYoutube, faInstagram, faSpaceAwesome } from '@fortawesome/free-brands
 
 function Footer() {
   return (
-    <footer className="bg-black-500 p-4 text-white text-center">
-      <div className="container mx-auto flex flex-col items-center">
+    <footer className="bg-black-500 p-4 text-white text-center mt-10 ">
+      <div className="container mx-auto flex flex-col items-center ">
         <div className="flex items-center space-x-10 mb-10">
           <a href="https://www.facebook.com/NASA" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faYoutube}  size="3x" />
@@ -27,3 +27,4 @@ function Footer() {
 }
 
 export default Footer
+
