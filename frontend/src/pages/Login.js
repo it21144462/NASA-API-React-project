@@ -16,7 +16,7 @@ function Login() {
   },[]);
 
   const fetchUsers=()=>{
-    axios.get('https://nasa-api-react-project-production.up.railway.app/register')
+    axios.get('https://nasa-api-react-project-production-9534.up.railway.app/register')
     .then((res)=>{
       console.log(res.data);
     })
@@ -26,7 +26,7 @@ function Login() {
     event.preventDefault();
     try{
       const user = {email,password};
-      const response = await axios.post('https://nasa-api-react-project-production.up.railway.app/login',user);
+      const response = await axios.post('https://nasa-api-react-project-production-9534.up.railway.app/login',user);
       const token = response.data.token;
       alert('Login Successfull');
 
